@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achadinhos Shopee — As melhores ofertas e cupons</title>
+  <meta name="description" content="Os melhores achadinhos da Shopee: eletrônicos, casa, moda, beleza e muito mais com desconto. Cupons e ofertas atualizadas todo dia!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#" class="logo">🛍️ Achadinhos<span>Shopee</span></a>
+      <nav class="nav" id="nav">
+        <a href="#produtos">Ofertas</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#cupons">Cupons</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">🔥 Ofertas atualizadas todo dia</span>
+        <h1>Os melhores <span class="highlight">achadinhos da Shopee</span> em um só lugar</h1>
+        <p>Selecionamos produtos com o melhor custo-benefício, frete grátis e cupons de desconto. Clique e compre com segurança direto na Shopee.</p>
+        <a href="#produtos" class="btn btn-primary">Ver ofertas do dia</a>
+        <a href="#cupons" class="btn btn-ghost">Pegar cupons</a>
+      </div>
+      <div class="hero-cards">
+        <div class="float-card">📱 Fone Bluetooth<br /><strong>R$ 29,90</strong> <span class="old">R$ 89,90</span></div>
+        <div class="float-card">⌚ Smartwatch<br /><strong>R$ 59,90</strong> <span class="old">R$ 199,90</span></div>
+        <div class="float-card">💡 Luminária LED<br /><strong>R$ 19,90</strong> <span class="old">R$ 49,90</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits container">
+    <div class="benefit">🚚 <strong>Frete grátis</strong><span>em milhares de produtos</span></div>
+    <div class="benefit">🎟️ <strong>Cupons</strong><span>descontos exclusivos</span></div>
+    <div class="benefit">✅ <strong>Compra segura</strong><span>você compra na Shopee</span></div>
+    <div class="benefit">⭐ <strong>Selecionados</strong><span>com boas avaliações</span></div>
+  </section>
+
+  <section class="container section" id="categorias">
+    <h2>Buscar por categoria</h2>
+    <div class="categories">
+      <a class="category" href="#produtos" data-cat="todos">🛒 Todos</a>
+      <a class="category" href="#produtos" data-cat="eletronicos">📱 Eletrônicos</a>
+      <a class="category" href="#produtos" data-cat="casa">🏠 Casa</a>
+      <a class="category" href="#produtos" data-cat="moda">👕 Moda</a>
+      <a class="category" href="#produtos" data-cat="beleza">💄 Beleza</a>
+      <a class="category" href="#produtos" data-cat="games">🎮 Games</a>
+    </div>
+  </section>
+
+  <section class="container section" id="produtos">
+    <div class="section-head">
+      <h2>Ofertas em destaque</h2>
+      <input type="search" id="search" placeholder="🔍 Buscar produto..." />
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>Nenhum produto encontrado. Tente outra busca. 🙈</p>
+  </section>
+
+  <section class="container section coupons" id="cupons">
+    <h2>🎟️ Cupons de desconto</h2>
+    <div class="coupon-list">
+      <div class="coupon">
+        <div class="coupon-value">R$ 10 OFF</div>
+        <div class="coupon-info">
+          <strong>Primeira compra</strong>
+          <span>Válido para novos usuários em compras acima de R$ 60</span>
+        </div>
+        <button class="btn btn-outline copy-btn" data-code="SHOPEE10">Copiar</button>
+      </div>
+      <div class="coupon">
+        <div class="coupon-value">15% OFF</div>
+        <div class="coupon-info">
+          <strong>Frete grátis + desconto</strong>
+          <span>Em produtos selecionados com frete grátis</span>
+        </div>
+        <button class="btn btn-outline copy-btn" data-code="FRETE15">Copiar</button>
+      </div>
+      <div class="coupon">
+        <div class="coupon-value">R$ 20 OFF</div>
+        <div class="coupon-info">
+          <strong>Mega semana</strong>
+          <span>Compras acima de R$ 120 em qualquer categoria</span>
+        </div>
+        <button class="btn btn-outline copy-btn" data-code="MEGA20">Copiar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section how" id="como-funciona">
+    <h2>Como funciona?</h2>
+    <div class="steps">
+      <div class="step"><span>1</span><strong>Escolha o produto</strong><p>Navegue pelas ofertas selecionadas por nossa equipe.</p></div>
+      <div class="step"><span>2</span><strong>Clique no botão</strong><p>Você será levado direto para a página do produto na Shopee.</p></div>
+      <div class="step"><span>3</span><strong>Compre com segurança</strong><p>A compra é feita 100% na Shopee, com proteção ao comprador.</p></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>🛍️ <strong>AchadinhosShopee</strong> — Participamos do programa de afiliados da Shopee e podemos receber comissão pelas compras qualificadas, sem custo extra para você.</p>
+      <p class="small">Este site não é oficial da Shopee. Preços e disponibilidade podem variar. © 2025 AchadinhosShopee.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
